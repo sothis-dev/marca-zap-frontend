@@ -1,12 +1,17 @@
 import { Link } from '@tanstack/react-router'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { Button } from '@/components/ui/button'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
@@ -47,7 +52,7 @@ export default function Header() {
                 className="p-2 rounded-lg hover:bg-emerald-100 dark:hover:bg-zinc-800 transition-colors"
                 aria-label="Toggle theme"
               >
-                {theme === 'dark' ? (
+                {mounted && theme === 'dark' ? (
                   <Sun className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
                 ) : (
                   <Moon className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
@@ -67,7 +72,7 @@ export default function Header() {
                 className="p-2 rounded-lg hover:bg-emerald-100 dark:hover:bg-zinc-800 transition-colors"
                 aria-label="Toggle theme"
               >
-                {theme === 'dark' ? (
+                {mounted && theme === 'dark' ? (
                   <Sun className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
                 ) : (
                   <Moon className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
