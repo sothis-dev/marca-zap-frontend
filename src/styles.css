@@ -131,4 +131,17 @@ code {
   body {
     @apply bg-background text-foreground;
   }
+
+  @keyframes background-move {
+    0% {
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      transform: translateX(-32px) translateY(-32px);
+    }
+  }
+
+  .animate-background-move {
+    animation: background-move 20s linear infinite;
+  }
 }
