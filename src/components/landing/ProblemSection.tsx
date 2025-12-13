@@ -1,5 +1,6 @@
+import { Clock, MessageSquareX, PhoneOff } from 'lucide-react'
+
 import { useInView } from '@/hooks/useInView'
-import { Clock, PhoneOff, MessageSquareX } from 'lucide-react'
 
 interface Problem {
   icon: React.ElementType
@@ -7,7 +8,7 @@ interface Problem {
   description: string
 }
 
-const problems: Problem[] = [
+const problems: Array<Problem> = [
   {
     icon: Clock,
     title: 'Horas perdidas todo dia',
@@ -42,7 +43,7 @@ export function ProblemSection() {
             }}
           >
             <img
-              src="https://illustrations.popsy.co/emerald/stressed-woman.svg"
+              src="src\assets\svg\undraw\undraw_text-messages_978a.svg"
               alt="Profissional estressado com mensagens"
               className="w-full h-auto"
             />

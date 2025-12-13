@@ -58,15 +58,6 @@ export function Hero() {
                 </Button>
               </a>
             </div>
-            
-            <div className="flex items-center gap-4 text-sm text-zinc-500 dark:text-zinc-400">
-                <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                        <div key={i} className="w-8 h-8 rounded-full border-2 border-white dark:border-zinc-950 bg-zinc-200 dark:bg-zinc-800" />
-                    ))}
-                </div>
-                <p>Usado por profissionais que valorizam cada minuto do dia</p>
-            </div>
           </div>
 
           {/* Visual Simulation */}

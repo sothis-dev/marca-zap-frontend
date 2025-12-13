@@ -7,24 +7,24 @@ interface Step {
   image: string
 }
 
-const steps: Step[] = [
+const steps: Array<Step> = [
   {
     number: 1,
     title: '2 minutos de configuração',
     description: 'Conecta WhatsApp. Define horários. Pronto. Sem complicação. Sem treinamento.',
-    image: 'https://illustrations.popsy.co/emerald/man-using-phone.svg',
+    image: 'src/assets/svg/undraw/undraw_time-management_4ss6.svg',
   },
   {
     number: 2,
     title: 'Cliente agenda sozinho',
     description: 'Ele manda mensagem. Sistema mostra horários. Ele escolhe. Sistema confirma. Você nem vê.',
-    image: 'https://illustrations.popsy.co/emerald/chat-bot.svg',
+    image: 'src/assets/svg/undraw/undraw_online-meetings_zutp.svg',
   },
   {
     number: 3,
     title: 'Lembretes automáticos',
     description: 'Sistema manda lembrete 24h antes. E 2h antes. Faltas caem pela metade. Receita sobe.',
-    image: 'https://illustrations.popsy.co/emerald/message-sent.svg',
+    image: 'src/assets/svg/undraw/undraw_reminders_ll1x.svg',
   },
 ]
 
