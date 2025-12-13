@@ -1,7 +1,9 @@
 import { Link } from '@tanstack/react-router'
-import { Button } from '@/components/ui/button'
-import { Shield, ArrowRight } from 'lucide-react'
+import { Shield, UserPlus } from 'lucide-react'
+
 import { AnimatedBackground } from './AnimatedBackground'
+
+import { Button } from '@/components/ui/button'
 
 export function FinalCTA() {
   return (
@@ -27,16 +29,22 @@ export function FinalCTA() {
           <Link to="/cadastro">
             <Button
               size="lg"
-              className="bg-emerald-600 text-white hover:bg-emerald-700 dark:bg-white dark:text-emerald-900 dark:hover:bg-emerald-50 text-lg px-8 py-6 h-auto shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1"
+              className="bg-emerald-600 text-white hover:bg-emerald-700 dark:bg-white dark:text-emerald-900 dark:hover:bg-emerald-50 text-lg px-8 py-4 h-auto font-semibold shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1"
             >
+              <UserPlus className="w-6 h-6 mr-2" />
               Criar Conta Grátis
-              <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </Link>
 
-          <div className="flex items-center gap-2 text-zinc-500 dark:text-emerald-200/80 text-sm">
-            <Shield className="w-4 h-4" />
-            <span>Teste grátis por 14 dias • Sem fidelidade • Cancele quando quiser</span>
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-2 text-zinc-500 dark:text-emerald-200/80 text-sm">
+            <div className="flex items-center gap-2">
+              <Shield className="w-4 h-4 shrink-0" />
+              <span className="text-center sm:text-left">Teste grátis por 14 dias</span>
+            </div>
+            <span className="hidden sm:inline">•</span>
+            <span className="text-center sm:text-left">Sem fidelidade</span>
+            <span className="hidden sm:inline">•</span>
+            <span className="text-center sm:text-left">Cancele quando quiser</span>
           </div>
         </div>
       </div>

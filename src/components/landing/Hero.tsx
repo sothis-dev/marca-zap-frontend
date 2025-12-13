@@ -1,16 +1,30 @@
 import { Link } from '@tanstack/react-router'
 import { ArrowRight } from 'lucide-react'
-import { AnimatedBackground } from './AnimatedBackground'
+
 import { ChatSimulation } from './ChatSimulation'
-import { Button } from '@/components/ui/button'
+
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { SplitText } from '@/components/ui/react-bits/split-text'
+import DotGrid from '@/components/reactbits/DotGrid'
 
 export function Hero() {
   return (
-    <section className="relative z-0 overflow-hidden bg-linear-to-br from-white to-emerald-50/30 dark:from-zinc-950 dark:to-emerald-950/20 py-20 px-4 md:py-28">
-      <AnimatedBackground />
-      <div className="container mx-auto max-w-7xl relative">
+    <section className="relative z-0 overflow-hidden bg-linear-to-br from-white to-emerald-50/30 dark:from-zinc-950 dark:to-emerald-950/20 h-[calc(100vh-4rem)] flex items-center px-4">
+      <div className="absolute inset-0 -z-10 opacity-20 dark:opacity-10">
+        <DotGrid
+          dotSize={2}
+          gap={24}
+          baseColor="#10b981"
+          activeColor="#10b981"
+          proximity={120}
+          shockRadius={200}
+          shockStrength={4}
+          resistance={800}
+          returnDuration={1.2}
+        />
+      </div>
+      <div className="container mx-auto max-w-7xl relative w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8">
