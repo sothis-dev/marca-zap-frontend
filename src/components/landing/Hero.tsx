@@ -41,7 +41,7 @@ export function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed">
-              O MarcaZap responde seus clientes em segundos, agenda horários e envia lembretes automaticamente no WhatsApp. Recupere seu tempo livre.
+              147 milhões de brasileiros já usam WhatsApp todos os dias. Chegou a hora de usá-lo a seu favor. Agendamentos automáticos. Lembretes inteligentes. Zero trabalho manual.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -57,15 +57,6 @@ export function Hero() {
                   Ver como funciona
                 </Button>
               </a>
-            </div>
-            
-            <div className="flex items-center gap-4 text-sm text-zinc-500 dark:text-zinc-400">
-                <div className="flex -space-x-2">
-                    {[1, 2, 3, 4].map((i) => (
-                        <div key={i} className="w-8 h-8 rounded-full border-2 border-white dark:border-zinc-950 bg-zinc-200 dark:bg-zinc-800" />
-                    ))}
-                </div>
-                <p>Junte-se a +500 profissionais</p>
             </div>
           </div>
 
