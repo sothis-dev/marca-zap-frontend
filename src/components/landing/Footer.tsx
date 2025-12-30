@@ -37,7 +37,7 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-zinc-600 dark:text-zinc-400">
-            © {currentYear} MarcaZap. Todos os direitos reservados.
+            © {currentYear} MarcaZap é um produto da LOTVS®. Todos os direitos reservados.
           </p>
         </div>
       </div>
